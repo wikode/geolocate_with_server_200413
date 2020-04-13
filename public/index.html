@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>The Weather Here</title>
+</head>
+
+<body>
+    <h1>The Weather is Here</h1>
+    <div>
+        <a href="/">Check in</a> | <a href="/checkins">Voir les check in</a>
+    </div>
+    <p>
+        Le temps aux coordonnées <span id="latitude"></span>&deg;,
+        <span id="longitude"></span>&deg;, qui correspond à la ville de <span id=city></span> est <span id="summary"></span> avec une température de <span id="temp"></span>&deg; C. La dernière mesure dans l'atmosphère (<span id="aq_parameter"></span>) est
+        <span id="aq_value"></span> <span id="aq_units"></span> en date du
+        <span id="aq_date"></span>.
+    </p>
+
+
+
+    <script src="sketch.js"></script>
+</body>
+
+</html>
