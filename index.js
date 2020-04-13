@@ -9,8 +9,10 @@ const app = express();
 const database = new Datastore('database.db');
 database.loadDatabase();
 
-app.listen(3000, () =>{
-    console.log("Port 3000 sur écoute pour l'appli");
+// On utilise le port spécifié dans l'environnement, s'il n'y en a pas on utilise le port 3000 par défaut
+const port = process.env.PORT || 3000;
+app.listen(port, () =>{
+    console.log(`ort ${port} sur écoute pour l'appli`);
 })
 
 app.use(express.static("public"));
